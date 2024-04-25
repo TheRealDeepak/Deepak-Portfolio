@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #081b29;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 85.5px 0;
+    background-color: #0096d181;
+    color: #081b29;
+  }
+
+  .bio {
+    width: 50%;
+   text-align: center;
+  }
+  
+  
+  
+  footer {
+    background-color: #081b29;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    
+  }
+  
