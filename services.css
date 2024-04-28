@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root{
+    --primery-color: #03a1e0d2;
+    --secondry-color: #081b29;
+}
+
+#service-section{
+    min-height: 740px;
+    width: 100%;
+    background: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#service-section h2{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#service-section h2::after{
+    position: absolute;
+    content: " ";
+    top: 8px;
+    left: -30px;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid var(--primery-color);
+}
+
+#service-section h2::before{
+    position: absolute;
+    content: " ";
+    top: 8px;
+    right: -30px;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid var(--primery-color);
+}
+
+#service-section #peragraph{
+    width: 45%;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: 1px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.cards .card{
+    height: 280px;
+    width: 350px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 8%;
+    background: #023457;
+    position: relative;
+    border-radius: 10px;
+}
+
+.cards .card::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #03a1e0c2 ;
+    transition: .6s;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.cards .card:hover.card::before{
+    transform: rotate(10deg);
+}
+
+.cards .card i{
+    font-size: 2.5rem;
+    color: var(--primery-color);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.cards .card h3{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cards .card .content p{
+    color: rgba(255,255,255,0.5);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
